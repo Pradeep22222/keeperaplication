@@ -5,12 +5,18 @@ import Heading from "./Components/Header";
 import reportWebVitals from "./reportWebVitals";
 import NotePart from "./Components/Note";
 import FooterFoot from "./Components/Footer";
+import PersonalDetails, {
+  PersonalDetailsHeading,
+} from "./Components/Personaldetails";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Heading />
     <NotePart />
     <FooterFoot />
+    <PersonalDetailsHeading />
+    <PersonalDetails name="Pradeep" age="df" sex="male" class="blue" />
+    <PersonalDetails name="Kumar" age="23" sex="female" class="red" />
   </React.StrictMode>
 );
 
